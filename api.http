@@ -2,7 +2,27 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-        "title": "Second Bootcamp",
-        "details": "My Second bootcamp has been created.",
-        "maximumAttendees": 200
+        "title": "New event 2",
+        "details": null,
+        "maximumAttendees": 1
 }
+
+###
+
+POST http://localhost:3333/events/12f67b1a-4e4c-4163-9a6b-90efac2161b8/attendees
+Content-Type: application/json
+
+{
+        "name": "João Pedro",
+        "email": "jpdst@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/12f67b1a-4e4c-4163-9a6b-90efac2161b8
+
+###
+
+GET http://localhost:3333/attendees/3/badge
+
+
